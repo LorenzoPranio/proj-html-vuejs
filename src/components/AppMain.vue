@@ -93,6 +93,27 @@ export default {
                     </div>
                 </div>
             </div>
+            <div class="bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 align-items-center border-gold">
+                            <div class="row">
+                                <div class="col-5 bg-image-b text-center align-content-center">
+                                    <img src="../img/shaving_butter.png">
+                                </div>
+                                <div class="col-7 bg-noir">
+                                    <p>THIS MONTHS FEATURED PRODUCT</p>
+                                    <H2 class="abril-fatface-regular">Shaving Butter</H2>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Pellentesque laoreet enim est, vel molestie dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <button><p>BUY NOW</p></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -205,13 +226,45 @@ export default {
         background-color: transparent;
         padding: 10px 35px;
         margin: 0px 0px 100px 0px;
-        p{
-            color: #be9359;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0px;
+            p{
+                color: #be9359;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0px;
+            }
         }
     }
+}
+.bg-image-b{
+    background-image: url(../img/avadabarbers-cta-background.jpg);
+    background-size: cover;
+    img{
+        width: 400px;
+        height: 400px;
     }
+}
+.bg-noir{
+    background-color: #121315;
+    padding: 50px 80px;
+    p{
+        margin-bottom: 10px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    .description{
+        padding: 0px;
+        p{
+            color: #b0b0b0;
+            font-weight: 200;
+        }
+    }
+    button{
+        margin-bottom: 0px;
+    }
+}
+.border-gold{
+    border-top: 5px solid #be9359;
+    margin-top: -50px;
 }
 </style>
