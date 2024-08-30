@@ -113,6 +113,84 @@ export default {
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>WHAT PEOPLE SAY</p>
+                            <h2 class="abril-fatface-regular">Reviews</h2>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
+                                    </div>
+                                    <div class="circle-img">
+                                        <img src="">
+                                    </div>
+                                    <h6>John Doe</h6>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
+                                    </div>
+                                    <div class="circle-img">
+                                        <img src="">
+                                    </div>
+                                    <h6>Pete Jones</h6>
+                                </div>
+                                <div class="col-4">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
+                                    </div>
+                                    <div class="circle-img">
+                                        <img src="">
+                                    </div>
+                                    <h6>Mark Wilson</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-cream">
+                <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;transform: rotate(180deg)"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>TALES FROM THE BARBER SHOP</p>
+                            <h2>Recent Blog Posts</h2>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="">
+                                    <h4>Avada Barbers Noww Open</h4>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img src="">
+                                    <h4>Choosing The Right Barber</h4>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img src="">
+                                    <h4>Quick Service Guide</h4>
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button><p>READ MORE FROM OUR BLOG</p></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -266,5 +344,8 @@ export default {
 .border-gold{
     border-top: 5px solid #be9359;
     margin-top: -50px;
+}
+.bg-cream{
+    background-color: #f5f5f5;
 }
 </style>
