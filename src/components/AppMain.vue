@@ -23,24 +23,30 @@ export default {
                 <div class="row">
                     <div class="col-12 text-center">
                         <p>MENS GROOMING</p>
-                        <h2>Services</h2>
+                        <h2 class="abril-fatface-regular">Services</h2>
                     </div>
                     <div class="col-12 text-center">
                         <div class="row">
                             <div class="col-4">
                                 <img src="../img/avadabarbers-trimcut-icon-before.png">
-                                <h3>Trim & Cut</h3>
-                                <p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p>
+                                <h3 class="abril-fatface-regular">Trim & Cut</h3>
+                                <div class="description">
+                                    <p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p>
+                                </div>
                             </div>
                             <div class="col-4">
                                 <img src="../img/avadabarbers-washndry-icon.png">
-                                <h3>Wash & Dry</h3>
-                                <p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p>
+                                <h3 class="abril-fatface-regular">Wash & Dry</h3>
+                                <div class="description">
+                                    <p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p>
+                                </div>
                             </div>
                             <div class="col-4">
                                 <img src="../img/avadabarbers-beardtrim-icon.png">
-                                <h3>Beard Tidy</h3>
-                                <p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p>
+                                <h3 class="abril-fatface-regular">Beard Tidy</h3>
+                                <div class="description">
+                                    <p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,16 +64,13 @@ export default {
     background-image: url(../img/avadabarbers-about-introbackground.jpg);
     background-size: cover;
 
-    .abril-fatface-regular {
-    font-family: "Abril Fatface", serif;
-    font-weight: bolder;
-    font-style: normal;
+    h2 {
     color: #b0b0b0;
     font-size: 70px;
     margin-bottom: 30px;
     }
     p{
-        font-size: 15px;
+        font-size: 18px;
         color: #be9359;
         font-weight: bold;
         margin: 100px 0px 0px 0px;
@@ -87,6 +90,52 @@ export default {
 }
 .bg-white{
     background-color: white;
-}
 
+    h3{
+        color: #be9359;
+        font-size: 35px;
+        margin: 30px 0px;
+    }
+    h2 {
+        color: #b0b0b0;
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    p{
+        font-size: 18px;
+        color: #be9359;
+        font-weight: bold;
+        margin: 0px;
+    }
+    button{
+        border: 3px solid #be9359;
+        background-color: transparent;
+        padding: 8px 30px;
+        margin: 0px 0px 100px 0px;
+        p{
+            color: #be9359;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+        }
+    }
+    .description{
+        padding: 50px;
+        margin-bottom: 35px;
+        p{
+            font-size: 18px;
+            color: black;
+            font-weight: 200;
+        }
+    }
+    img{
+        height: 120px;
+    }
+}
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: bolder;
+    font-style: normal;
+
+}
 </style>
