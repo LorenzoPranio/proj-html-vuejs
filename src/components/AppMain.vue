@@ -55,6 +55,44 @@ export default {
                     </div>
                 </div>
             </div>
+            <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#121315;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
+            <div class="bg-image">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>WE HAVE YOU COVERED</p>
+                            <h2 class="abril-fatface-regular">Avada Grooming Products</h2>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="../img/brush_dark.png">
+                                    <h4 class="abril-fatface-regular">Brush</h4>
+                                    <p>$15.00</p>
+                                </div>
+                                <div class="col-3">
+                                    <img src="../img/scissors.png">
+                                    <h4 class="abril-fatface-regular">Scissors</h4>
+                                    <p>$85.00</p>
+                                </div>
+                                <div class="col-3">
+                                    <img src="../img/hot_oil_dark.png">
+                                    <h4 class="abril-fatface-regular">Hot Oil</h4>
+                                    <p>$15.00</p>
+                                </div>
+                                <div class="col-3">
+                                    <img src="../img/straight_razor_dark.png">
+                                    <h4 class="abril-fatface-regular">Straight Razor</h4>
+                                    <p>$30.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button><p>SHOP OUR PRODUCT RANGE</p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -137,5 +175,43 @@ export default {
     font-weight: bolder;
     font-style: normal;
 
+}
+.bg-image{
+    background-image: url(../img/avadabarbers-reviewsbackground.jpg);
+    background-size: cover;
+    .container-fluid{
+        h2 {
+            color: #b0b0b0;
+            font-size: 70px;
+            margin-bottom: 40px;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+        }
+        h4{
+            color: #be9359;
+            font-size: 30px;
+            margin: 15px 0px;
+        }
+        p{
+            font-size: 18px;
+            color: #be9359;
+            font-weight: 200;
+            margin: 0px 0px 80px 0px;
+        }
+        button{
+        border: 3px solid #be9359;
+        background-color: transparent;
+        padding: 10px 35px;
+        margin: 0px 0px 100px 0px;
+        p{
+            color: #be9359;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+        }
+    }
+    }
 }
 </style>
