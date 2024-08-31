@@ -1,7 +1,16 @@
 <script>
-export default {
-
-}
+    export default {
+        data() {
+            return {
+                OpenMenu: false
+            };
+        },
+        methods: {
+            PopupMenu() {
+                this.OpenMenu = !this.OpenMenu;
+            }
+        }
+    }
 </script>
 
 <template>
@@ -15,7 +24,7 @@ export default {
                         </div>
                         <div class="col-6 text-end pt-4">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-bars" @click="PopupMenu"></i>
                         </div>
                     </div>
                 </div>
@@ -34,6 +43,21 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- Popup Menu -->
+        <div v-if="OpenMenu" class="popup-menu">
+            <div class="menu-header">
+                <i class="fa-solid fa-xmark" @click="PopupMenu"></i>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -42,6 +66,7 @@ export default {
         background-image: url('../img/avadabarbers-homepage-hero-bg.jpg');
         height: 1000px;
         background-size: cover;
+        position: relative;
         
         .fa-solid{
             color: white;
@@ -81,5 +106,48 @@ export default {
                 }
             }
         }
+    }
+    //Popup Menu
+    .popup-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        padding-top: 20px;
+    }
+
+    .menu-header {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-header i {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu-list li {
+        margin: 30px 0px;;
+    }
+
+    .menu-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
     }
 </style>
