@@ -18,7 +18,7 @@ export default {
                             <div class="col-4">
                                 <img src="../img/avadabarbers-stickylogo-x2.png">
                                 <p>Avada Barbers <br>123 New York Street <br>New York City <br>info@yourwebsite.com <br>+1 (555) 555-1212</p>
-                                <p class="gold-text">FOLLOW US</p>
+                                <p class="gold-text mt-4">FOLLOW US</p>
                                 <i class="fa-brands fa-facebook-f"></i>
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-youtube"></i>
@@ -65,7 +65,11 @@ export default {
             border: 3px solid #be9359;
             background-color: transparent;
             padding: 10px 35px; 
-            margin-bottom: 50px;
+            margin-bottom: 100px;
+            margin-top: 20px;
+        }
+        button:hover{
+            transform: scale(1.1);
         }
         .gold-text{
             color: #be9359;
@@ -74,9 +78,12 @@ export default {
             margin: 0px;
         }
         .fa-brands{
-           font-size: 20px;
-            margin: 30px 10px;
+            margin: 70px 10px 30px 10px;
             color: white;
+            font-size: 22px;
+        }
+        .fa-brands:hover{
+            color: #be9359;
         }
     }
     .bg-light-black{
@@ -84,7 +91,7 @@ export default {
         p{
             color: #b0b0b0;
             font-weight: 100;
-            margin: 40px 0px;
+            margin: 50px 0px;
             font-size: 14px;
         }
     }
