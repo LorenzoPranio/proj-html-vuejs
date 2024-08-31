@@ -73,6 +73,9 @@
             margin: 10px;
             font-size: x-large;
         }
+        .fa-solid:hover{
+            cursor: pointer;
+        }
         .abril-fatface-regular {
             font-family: "Abril Fatface", serif;
             font-weight: bolder;
@@ -105,6 +108,9 @@
                     margin: 0px;
                 }
             }
+            button:hover{
+                transform: scale(1.1);
+            }
         }
     }
     //Popup Menu
@@ -134,6 +140,9 @@
         font-size: 24px;
         cursor: pointer;
     }
+    .menu-header i:hover{
+        color: #be9359;
+    }
 
     .menu-list {
         list-style: none;
@@ -149,5 +158,9 @@
         text-decoration: none;
         color: white;
         font-size: 24px;
+    }
+    .menu-list li a:hover{
+        color: #be9359;
+        font-weight: 700;
     }
 </style>
