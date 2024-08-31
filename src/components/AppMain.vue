@@ -23,7 +23,7 @@ export default {
                 <div class="row">
                     <div class="col-12 text-center">
                         <p>MENS GROOMING</p>
-                        <h2 class="abril-fatface-regular">Services</h2>
+                        <h2 class="abril-fatface-regular mb-100">Services</h2>
                     </div>
                     <div class="col-12 text-center">
                         <div class="row">
@@ -115,36 +115,36 @@ export default {
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center mt-200">
                             <p>WHAT PEOPLE SAY</p>
                             <h2 class="abril-fatface-regular">Reviews</h2>
                         </div>
                         <div class="col-12 text-center">
                             <div class="row">
                                 <div class="col-4">
-                                    <div class="description">
+                                    <div class="description-rev">
                                         <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
                                     </div>
                                     <div class="circle-img">
-                                        <img src="">
+                                        <img src="../img/avadabarbers-trimcut-gallery6.jpg">
                                     </div>
                                     <h6>John Doe</h6>
                                 </div>
                                 <div class="col-4">
-                                    <div class="description">
+                                    <div class="description-rev">
                                         <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
                                     </div>
                                     <div class="circle-img">
-                                        <img src="">
+                                        <img src="../img/avadabarbers-trimcut-gallery7.jpg">
                                     </div>
                                     <h6>Pete Jones</h6>
                                 </div>
                                 <div class="col-4">
-                                    <div class="description">
+                                    <div class="description-rev">
                                         <p>Lorem ipsum dolor sit emet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
                                     </div>
                                     <div class="circle-img">
-                                        <img src="">
+                                        <img src="../img/avadabarbers-trimcut-gallery3.jpg">
                                     </div>
                                     <h6>Mark Wilson</h6>
                                 </div>
@@ -159,27 +159,27 @@ export default {
                     <div class="row">
                         <div class="col-12 text-center">
                             <p>TALES FROM THE BARBER SHOP</p>
-                            <h2>Recent Blog Posts</h2>
+                            <h2 class="abril-fatface-regular">Recent Blog Posts</h2>
                         </div>
                         <div class="col-12 text-center">
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="">
-                                    <h4>Avada Barbers Noww Open</h4>
+                                    <img src="../img/avadabarbers-second-blog-700x441.jpg">
+                                    <h4 class="abril-fatface-regular">Avada Barbers Noww Open</h4>
                                     <div class="description">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <img src="">
-                                    <h4>Choosing The Right Barber</h4>
+                                    <img src="../img/avadabarbers-choosing-blog-700x441.jpg">
+                                    <h4 class="abril-fatface-regular">Choosing The Right Barber</h4>
                                     <div class="description">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <img src="">
-                                    <h4>Quick Service Guide</h4>
+                                    <img src="../img/avadabarbers-ourservice-blog-700x441.jpg">
+                                    <h4 class="abril-fatface-regular">Quick Service Guide</h4>
                                     <div class="description">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper.</p>
                                     </div>
@@ -236,7 +236,6 @@ export default {
     h2 {
         color: #b0b0b0;
         font-size: 60px;
-        margin-bottom: 100px;
     }
     p{
         font-size: 18px;
@@ -267,6 +266,25 @@ export default {
     }
     img{
         height: 120px;
+    }
+    .description-rev{
+        padding: 50px 50px 0px 50px;
+        p{
+            font-size: 18px;
+            color: black;
+            font-weight: 200;
+        }
+    }
+    h6{
+        color: #be9359;
+        font-weight: 600;
+        margin-bottom: 50px
+    }
+    .circle-img{
+        margin: 30px 0px;
+        img{
+            border-radius: 50%;
+        }
     }
 }
 .abril-fatface-regular {
@@ -300,10 +318,10 @@ export default {
             margin: 0px 0px 80px 0px;
         }
         button{
-        border: 3px solid #be9359;
-        background-color: transparent;
-        padding: 10px 35px;
-        margin: 0px 0px 100px 0px;
+            border: 3px solid #be9359;
+            background-color: transparent;
+            padding: 10px 35px;
+            margin: 0px 0px 100px 0px;
             p{
                 color: #be9359;
                 font-size: 20px;
@@ -347,5 +365,37 @@ export default {
 }
 .bg-cream{
     background-color: #f5f5f5;
+    p{
+        font-size: 18px;
+        color: #be9359;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    h4{
+        color: #be9359;
+        font-size: 30px;
+        margin: 15px 0px;
+    }
+    .description{
+        padding: 20px;
+        p{
+            font-size: 18px;
+            color: black;
+            font-weight: 200;
+            margin-top: 0px;
+        }
+    }
+    img{
+        width: 400px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mt-200{
+    margin-top: 200px;
 }
 </style>
