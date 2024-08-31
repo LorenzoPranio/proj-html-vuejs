@@ -60,7 +60,7 @@ export default {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <p>WE HAVE YOU COVERED</p>
+                            <p class="gold-text">WE HAVE YOU COVERED</p>
                             <h2 class="abril-fatface-regular">Avada Grooming Products</h2>
                         </div>
                         <div class="col-12 text-center">
@@ -329,6 +329,12 @@ export default {
                 margin: 0px;
             }
         }
+        .gold-text{
+            color: #be9359;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+        }
     }
 }
 .bg-image-b{
@@ -397,5 +403,8 @@ export default {
 }
 .mt-200{
     margin-top: 200px;
+}
+button:hover{
+                transform: scale(1.1);
 }
 </style>
