@@ -142,7 +142,7 @@
     }
 
     .menu-list li {
-        margin: 30px 0px;;
+        margin: 30px 0px;
     }
 
     .menu-list li a {
