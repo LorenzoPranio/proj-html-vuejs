@@ -1,6 +1,9 @@
 <script>
+import AppCopy from './AppCopy.vue';
 export default {
-    
+    components:{
+        AppCopy
+    }
 }
 </script>
 
@@ -39,15 +42,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="bg-light-black">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>&copy Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Right Reserved | Powered by WordPress</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <AppCopy />
     </div>
 </template>
 
@@ -95,15 +90,6 @@ export default {
         }
         .fa-brands:hover{
             color: #be9359;
-        }
-    }
-    .bg-light-black{
-        background-color: rgb(25, 25, 25);
-        p{
-            color: #b0b0b0;
-            font-weight: 100;
-            margin: 50px 0px;
-            font-size: 14px;
         }
     }
 </style>
