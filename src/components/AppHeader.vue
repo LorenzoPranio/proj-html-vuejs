@@ -1,24 +1,34 @@
 <script>
-    export default {
-        data() {
-    return {
-      OpenMenu: false,
-      menuItems: [
-        { name: 'Home', link: '#' },
-        { name: 'About Us', link: '#' },
-        { name: 'Services', link: '#' },
-        { name: 'Shop', link: '#' },
-        { name: 'Our Team', link: '#' },
-        { name: 'Blog', link: '#' },
-        { name: 'Contact Us', link: '#' }
-      ]
-    };
-  },
-  methods: {
-    PopupMenu() {
-      this.OpenMenu = !this.OpenMenu;
+export default {
+    data() {
+        return {
+            OpenMenu: false,
+            menuItems: [
+                { name: 'Home', link: '#' },
+                { name: 'About Us', link: '#' },
+                { name: 'Services', link: '#' },
+                { name: 'Shop', link: '#' },
+                { name: 'Our Team', link: '#' },
+                { name: 'Blog', link: '#' },
+                { name: 'Contact Us', link: '#' }
+            ],
+            headerIcons: [
+                { iconClass: 'fa-cart-shopping' },
+                { iconClass: 'fa-bars', clickAction: this.PopupMenu }
+            ],
+            HeaderContent: {
+                title: 'Barber Shop',
+                subtitle: 'The Pinnacle of Male Grooming',
+                buttonText: 'LEARN MORE',
+                imgSrc: '/src/img/avadabarbers_hero_focalmirror-600x825.png'
+            }
+        };
+    },
+    methods: {
+        PopupMenu() {
+            this.OpenMenu = !this.OpenMenu;
+        }
     }
-  }
 };
 </script>
 
@@ -32,8 +42,9 @@
                             <img src="../img/avadabarbers-logo-x2-200x70.png">
                         </div>
                         <div class="col-6 text-end pt-4">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bars" @click="PopupMenu"></i>
+                            <i v-for="(icon, index) in headerIcons" :key="index" :class="['fa-solid', icon.iconClass]" 
+                            @click="icon.clickAction && icon.clickAction()">
+                            </i>
                         </div>
                     </div>
                 </div>
@@ -42,13 +53,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-6">
-                    <h1 class="abril-fatface-regular">Barber Shop</h1>
+                    <h1 class="abril-fatface-regular">{{ HeaderContent.title }}</h1>
                     <hr>
-                    <p>The Pinnacle of Male Grooming</p>
-                    <button><p>LEARN MORE</p></button>
+                    <p>{{ HeaderContent.subtitle }}</p>
+                    <button><p>{{ HeaderContent.buttonText }}</p></button>
                 </div>
                 <div class="col-6">
-                    <img src="../img/avadabarbers_hero_focalmirror-600x825.png">
+                    <img :src="HeaderContent.imgSrc">
                 </div>
             </div>
         </div>
@@ -80,6 +91,7 @@
         }
         .fa-solid:hover{
             cursor: pointer;
+            color: #be9359;
         }
         .abril-fatface-regular {
             font-family: "Abril Fatface", serif;
