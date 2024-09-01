@@ -1,10 +1,42 @@
 <script>
 import AppCopy from './AppCopy.vue';
 export default {
-    components:{
-        AppCopy
-    }
-}
+  components: {
+    AppCopy
+  },
+  data() {
+    return {
+      contactInfo: [
+        { text: 'Avada Barbers' },
+        { text: '123 New York Street' },
+        { text: 'New York City' },
+        { text: 'info@yourwebsite.com' },
+        { text: '+1 (555) 555-1212' }
+      ],
+      socialIcons: [
+        { iconClass: 'fa-facebook-f' },
+        { iconClass: 'fa-twitter' },
+        { iconClass: 'fa-youtube' },
+        { iconClass: 'fa-instagram' }
+      ],
+      footerSections: [
+        {
+          imgSrc: "/src/img/avadabarbers_footer_shop_image-400x312.png",
+          buttonText: "SHOP OUR RANGE NOW"
+        },
+        {
+          imgSrc: "/src/img/avadabarbers-stickylogo-x2.png",
+          ContactSection: true
+        },
+        {
+          imgSrc: "/src/img/avadabarbers_footer_appointment_image-400x312.png",
+          buttonText: "BOOK YOUR APPOINTMENT"
+        }
+      ]
+    };
+  }
+};
+
 </script>
 
 <template>
@@ -14,28 +46,22 @@ export default {
                 <div class="row">
                     <div class="col-12">
                         <div class="row text-center">
-                            <div class="col-4">
-                                <img class="footer-img" src="../img/avadabarbers_footer_shop_image.png">
-                                <button><p class="gold-text">SHOP OUR RANGE NOW</p></button>
-                            </div>
-                            <div class="col-4">
-                                <img src="../img/avadabarbers-stickylogo-x2.png">
-                                <ul>
-                                    <li><p>Avada Barbers</p></li>
-                                    <li><p>123 New York Street</p></li>
-                                    <li><p>New York City</p></li>
-                                    <li><p>info@yourwebsite.com</p></li>
-                                    <li><p>+1 (555) 555-1212</p></li>
-                                </ul>
-                                <p class="gold-text mt-4">FOLLOW US</p>
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-youtube"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="col-4">
-                                <img class="footer-img" src="../img/avadabarbers_footer_appointment_image.png">
-                                <button><p class="gold-text">BOOK YOUR APPOINTMENT</p></button>
+                            <div class="col-4" v-for="(section, index) in footerSections" :key="index">
+                                <img :src="section.imgSrc">
+                                <template v-if="section.ContactSection">
+                                    <ul>
+                                        <li v-for="(item, index) in contactInfo" :key="index">
+                                            <p>{{ item.text }}</p>
+                                        </li>
+                                    </ul>
+                                    <p class="gold-text mt-4">FOLLOW US</p>
+                                    <a v-for="(icon, index) in socialIcons" :key="index" :href="icon.link">
+                                        <i :class="['fa-brands', `${icon.iconClass}`]"></i>
+                                    </a>
+                                </template>
+                                <template v-else>
+                                    <button><p class="gold-text">{{ section.buttonText }}</p></button>
+                                </template>
                             </div>
                         </div>
                     </div>
@@ -51,9 +77,6 @@ export default {
         background-color: #121315;
         .col-4{
             margin-top: 60px;
-            .footer-img{
-                width: 450px;
-            }
         }
         ul{
             list-style: none;
@@ -72,7 +95,7 @@ export default {
             background-color: transparent;
             padding: 10px 35px; 
             margin-bottom: 100px;
-            margin-top: 20px;
+            margin-top: 40px;
         }
         button:hover{
             transform: scale(1.1);
@@ -84,7 +107,7 @@ export default {
             margin: 0px;
         }
         .fa-brands{
-            margin: 70px 10px 30px 10px;
+            margin: 50px 10px 30px 10px;
             color: white;
             font-size: 22px;
         }
