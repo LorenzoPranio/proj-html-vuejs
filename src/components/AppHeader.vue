@@ -1,16 +1,25 @@
 <script>
     export default {
         data() {
-            return {
-                OpenMenu: false
-            };
-        },
-        methods: {
-            PopupMenu() {
-                this.OpenMenu = !this.OpenMenu;
-            }
-        }
+    return {
+      OpenMenu: false,
+      menuItems: [
+        { name: 'Home', link: '#' },
+        { name: 'About Us', link: '#' },
+        { name: 'Services', link: '#' },
+        { name: 'Shop', link: '#' },
+        { name: 'Our Team', link: '#' },
+        { name: 'Blog', link: '#' },
+        { name: 'Contact Us', link: '#' }
+      ]
+    };
+  },
+  methods: {
+    PopupMenu() {
+      this.OpenMenu = !this.OpenMenu;
     }
+  }
+};
 </script>
 
 <template>
@@ -49,13 +58,9 @@
                 <i class="fa-solid fa-xmark" @click="PopupMenu"></i>
             </div>
             <ul class="menu-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li v-for="item in menuItems" :key="item.name">
+                    <a :href="item.link">{{ item.name }}</a>
+                </li>
             </ul>
         </div>
     </div>
